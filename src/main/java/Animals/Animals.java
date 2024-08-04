@@ -1,4 +1,4 @@
-package org.TanakaEnock.Animals;
+package Animals;
 
 public class Animals {
     private String name;
@@ -12,14 +12,14 @@ public class Animals {
 
 
     public Animals() {
-        name = "Bird";
-        age = 5;
-        gender = "Male";
-        species = "Flamingo";
-        weight = 20;
-        Diet = "Herbivore";
-        energyLevel = 30;
-        status = true;
+        this.name = "Bird";
+        this.age = 5;
+        this.gender = "Male";
+        this.species = "Flamingo";
+        this.weight = 20;
+        this.Diet = "Herbivore";
+        this.energyLevel = 30;
+        this.status = true;
     }
 
     public Animals(String name, int age, String gender, int weight, String species, String diet, int energyLevel, Boolean status) {
@@ -95,6 +95,20 @@ public class Animals {
 
     public void setStatus(Boolean status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Animals{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", species='" + species + '\'' +
+                ", weight=" + weight +
+                ", Diet='" + Diet + '\'' +
+                ", energyLevel=" + energyLevel +
+                ", status=" + status +
+                '}';
     }
 }
 
